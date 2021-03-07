@@ -1,0 +1,104 @@
+.header__main-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+    .logo {
+        display: flex;
+        align-items:center;
+        .svg_logo {
+            width:16.52%;
+            max-width: 55px;
+            min-width: none;
+            max-height: 55px;
+        }
+
+        .logo__text {
+            h1 {
+                font-size: 33px;
+                padding-left: 1px;
+            }
+
+            .logo__subtittle {
+                display: none;
+            } 
+        }
+    }
+
+    .header__main-panel__form {
+        width: 57.3558%;
+        height:35px;
+        display: flex;
+        .header__main-panel__form__list {
+            width:65px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background:#f1f1f1;
+            border-radius: 5px 0 0 5px;
+            margin-right: 1px;
+            cursor: pointer;
+            span {
+                position: relative;
+                top:1px;
+                transform: rotate(180deg);
+                font-size: 10px;
+            }
+        }
+
+        .header__main-panel__form__search {
+            width:87.0056%;
+            height: 100%;
+            border:none;
+            background:#fff;
+        }
+
+        .header__main-panel__form__button {
+            cursor:pointer;
+            width:49px;
+            height: 100%;
+            background:$orange;
+            border:none;
+            border-radius:0 5px 5px 0;
+
+            .svg_search {
+                width:20px;
+                height:21px;
+                fill:#fff;
+            }
+        }
+    }
+
+    .header__info-block {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+
+        img {
+            width:35px;
+            height:35px;
+            margin-right: 3px;
+        }
+
+        span {
+            width:105px;
+        }
+    }
+
+    .header__basket {
+        display: flex;
+        position: relative;
+        .svg_basket {
+            width:29px;
+            height:27px;
+            fill:#000;
+        }
+        .basket_number {
+            position:absolute;
+            top:0;
+            left:0;
+        }
+    }
+}

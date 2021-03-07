@@ -1,0 +1,43 @@
+$display-width:1920px; //Ширина окна браузера
+$max-container-width:1543px; //Ширина максимальной ширины контейнера
+
+/******Grid*****/
+$max-width:$max-container-width/$display-width*100%;
+
+$col-12:100%;
+$col-11:100%/12*11;
+$col-10:100%/12*10;
+$col-9:100%/12*9;
+$col-8:100%/12*8;
+$col-7:100%/12*7;
+$col-6:100%/12*6;
+$col-5:100%/12*5;
+$col-4:100%/12*4;
+$col-3:100%/12*3;
+$col-2:100%/12*2;
+$col-1:100%/12;
+
+._col-1,._col-2,._col-3,._col-4,._col-5,._col-6,
+._col-7,._col-8,._col-9,._col-10,._col-11,._col-12 {
+    display: block;
+    box-sizing:border-box;
+}
+._col-1 {width:$col-1}
+._col-2 {width:$col-2}
+._col-3 {width:$col-3}
+._col-4 {width:$col-4}
+._col-5 {width:$col-5}
+._col-6 {width:$col-6}
+._col-7 {width:$col-7}
+._col-8 {width:$col-8}
+._col-9 {width:$col-9}
+._col-10 {width:$col-10}
+._col-11 {width:$col-11}
+._col-12 {width:$col-12}
+
+._container {
+    position: relative;
+    width:$max-width;
+    margin: 0 auto;
+    box-sizing:border-box;
+}

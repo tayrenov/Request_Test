@@ -42,10 +42,7 @@ let {src, dest} = require('gulp'), //ПОдключение плагинов
   imagemin = require("gulp-imagemin"), //Уменьшение веса изображения
   webp = require("gulp-webp"), //Конверт в webp  
   webphtml = require("gulp-webp-html"),//добавление в html конструкцию под webp
-  webpcss = require("gulp-webpcss"), //добавление в CSS стиль background конструкцию под webp
-  ttf2woff = require("gulp-ttf2woff"), //  Обработка
-  ttf2woff2 = require("gulp-ttf2woff2"),//    шрифтов
-  fonter = require("gulp-fonter");//otf в woff/woff2
+  webpcss = require("gulp-webpcss"); //добавление в CSS стиль background конструкцию под webp
   
 function browserSync(params) {
   browsersync.init({
@@ -128,23 +125,6 @@ function images() {
     .pipe(browsersync.stream());
 }
 
-function fonts() {
-  src(path.src.fonts)
-    .pipe(ttf2woff())
-    .pipe(dest(path.build.fonts));
-
-  return src(path.src.fonts)
-    .pipe(ttf2woff2())
-    .pipe(dest(path.build.fonts));    
-}
-
-gulp.task('otf2ttf', function(){
-  return src([source_folder + '/fonts/*.otf'])
-    .pipe(fonter({
-      formats: ['ttf']
-    }))
-    .pipe(dest(source_folder + '/fonts/'));
-});
 
 function watchFiles(params) {
   gulp.watch([path.watch.html],html); //Слежка за html
@@ -152,10 +132,9 @@ function watchFiles(params) {
   gulp.watch([path.watch.js], js);
 }
 
-let build = gulp.series(gulp.parallel(js,css,html,images,fonts));
+let build = gulp.series(gulp.parallel(js,css,html,images));
 let watch=gulp.parallel(build,watchFiles,browserSync);
 
-exports.fonts = fonts;
 exports.js = js;
 exports.css = css;
 exports.html = html;

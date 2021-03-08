@@ -1,46 +1,83 @@
 .header__wrapper {
     background:$bg_gray;
-
+    
     .header__main-menu__wrapper {
         background: $green;
         width:100%;
         height:48px;
         display: flex;
         align-items:center;
+        justify-content: space-between;
+        .header__main-menu__container {
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+           
+            .header__burger {
+                display:none;
+            }
+            .header__main-menu_list {
+                width:77.2%;
+                display: flex;
+                justify-content: space-between; 
+                align-items:center;
+                .header__main-menu {
+                    width:100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items:center;                    
+                    .header__main-menu__vertical_line {
+                        width:1px;
+                        height: 29px;
+                        background-color:#40bf79;
+                        margin-left: -20px;
+                        margin-right: -12px;
+                    }
+                }
+            }
+        }
+        
 
-        .header__main-menu {
+        .header__main-menu__contacts {
+            width:19.55%;
             display: flex;
             justify-content: space-between;
-
-            li {
+            align-items: center;
+            svg {
+                fill: $white;
+                box-sizing:border-box;
+            }
+            .contacts__email {
+                min-width: 139px;
+                width:46%;
                 display: flex;
-                align-items:center;
-
-                svg {
-                    fill: $white;
-                    box-sizing:border-box;
-                }
-
+                justify-content: space-between;
                 .svg_email {
-                    width:24px;
-                    height:19px;
+                    width:21px;
+                    height:20px;
                 }
-
-                .svg_telephone {
-                    padding-right: 5px;
-                    width:20px;
-                    height: 20px;
-                }
-
-                a{
-                    color:$white;
-                }
-
             }
 
-        }
+            .contacts__telephone {
+                width:46%;
+                display: flex;
+                justify-content: space-between;
+                .svg_telephone {
+                    width:31px;
+                    height: 17px;
+                }
+            }
 
+    
+           
+        }
+        a{
+            color:$white;
+        }
+    
+    
     }
+
     @import "header_main-panel.scss";
     @import "header_products-menu.scss";
 

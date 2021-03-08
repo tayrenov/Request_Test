@@ -1,38 +1,47 @@
 <header class="header__wrapper">
-    <nav class="header__main-menu__wrapper">
-        <ul class="header__main-menu _container">
-            <li><a href="#">Компания</a></li>  
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="#">Проектирование</a></li>
-            <li><a href="#">Ресторанам</a></li>
-            <li><a href="#">Застройщикам</a></li>
-            <li><a href="#">Гас.заказчикам</a></li>
-            <li><a href="#">Таблет-питание</a></li>
-            <li><a href="#">Сервис</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li>
-                <svg class="svg_email">
-                    <use xlink:href="img/icons/sprite.svg#email"></use>
-                </svg>
-                <a href="mailto: info@stolovay.ru">info@stolovay.ru</a>
-            </li>
+    <div class="header__main-menu__wrapper  ">
+        <div class="header__main-menu__container _container">
+            <div class="header__burger">
+                <div class="header__burger-icon"></div>
+            </div>
+            <nav class="header__main-menu_list">
+                <ul class="header__main-menu ">
+                    <li><a href="#">Компания</a></li>  
+                    <li><a href="#">Портфолио</a></li>
+                    <li><a href="#">Проектирование</a></li>
+                    <div class="header__main-menu__vertical_line"></div>
+                    <li><a href="#">Ресторанам</a></li>
+                    <li><a href="#">Застройщикам</a></li>
+                    <li><a href="#">Гас.заказчикам</a></li>
+                    <li><a href="#">Таблет-питание</a></li>
+                    <div class="header__main-menu__vertical_line"></div>
+                    <li><a href="#">Сервис</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__main-menu__contacts">
+                <a href="mailto: info@stolovay.ru" class="contacts__email">
+                    <svg class="svg_email">
+                        <use xlink:href="img/icons/sprite.svg#email"></use>
+                    </svg>
+                    <span>info@stolovay.ru</span>
+                </a>
 
-            <li>
-                <svg class="svg_telephone">
-                    <use xlink:href="img/icons/sprite.svg#telephone"></use>
-                </svg>
-                <a href="tel: 84957907205">8 495 790-72-05</a>
-            </li>
-        </ul>
-    </nav>
+                <a href="tel: 84957907205" class="contacts__telephone">
+                    <svg class="svg_telephone">
+                        <use xlink:href="img/icons/sprite.svg#telephone"></use>
+                    </svg>
+                    <span>8 495 790-72-05</span>
+                </a>
+            </div>
+        </div>    
+    </div>
     
     <section class="header__main-panel _container">
-        <div class="logo _col-2">
-            <svg class="svg_logo">
-                <use xlink:href="img/icons/sprite.svg#logo"></use>
-            </svg>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
             <div class="logo__text">
-                <h1>Столовая.ру</h1>
+                <h1>Столовая.<span>ру</span></h1>
                 <span class="logo__subtittle">Создание пищеблоков</span>
             </div>
 
@@ -41,7 +50,7 @@
         <form class="header__main-panel__form">
             <div class="header__main-panel__form__list">
                 Всё 
-                <span>&#9650;</span>
+                <span> &#9650;</span>
             </div>
             <input class="header__main-panel__form__search" type="search" name="" placeholder="Поиск по сайту">
             <button class="header__main-panel__form__button">
@@ -59,94 +68,101 @@
         </div>
 
         <div class="header__basket">
-            <svg class="svg_basket">
-                <use xlink:href="img/icons/sprite.svg#basket"></use>
-            </svg>
-            <div class="basket_number">0</div>
+            <img src="img/basket.png" alt="basket">
+            <div class="basket_number">12</div>
             <div>
                 <span>Сумма</span>
                 <p>150 000 руб.</p>
             </div>    
         </div>
     </section>
+    
     <nav class="header__products-menu__wrapper">
-            <ul class="header__products-menu _container">
-                <li>
-                    <a href="#">
-                        <img src="img/product-menu/icon1.png" alt="Тепловое">
-                        <p>Тепловое</p>
-                    </a>
-                </li>
+        
+        <div class="header__products-menu__adaptive-btn">
+            <span>Оборудование</span>
+            <span>></span>
+        </div>
 
-                <li>
-                    <a href="#">
-                        <img src="img/product-menu/icon2.png" alt="Холодильное">
-                        <p>Холодильное</p>
-                    </a>
-                </li>
+        <ul class="header__products-menu _container">
+            
+            <li>
+                <a href="#">
+                    <img src="img/product-menu/icon1.png" alt="Тепловое">
+                    <p>Тепловое</p>
+                </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                        <img src="img/product-menu/icon3.png" alt="Электромеханическое">
-                        <p>Электромеханическое</p>
-                    </a>
-                </li>
+            <li>
+                <a href="#">
+                    <img src="img/product-menu/icon2.png" alt="Холодильное">
+                    <p>Холодильное</p>
+                </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                        <img src="img/product-menu/icon4.png" alt="Посудомоечное">
-                        <p>Посудомоечное</p>
-                    </a>
-                </li>
+            <li>
+                <a href="#">
+                    <img src="img/product-menu/icon3.png" alt="Электромеханическое">
+                    <p>Электромеханическое</p>
+                </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                        <img src="img/product-menu/icon5.png" alt="Хлебопекарное">
-                        <p>Хлебопекарное</p>
-                    </a>
-                </li>
+            <li>
+                <a href="#">
+                    <img src="img/product-menu/icon4.png" alt="Посудомоечное">
+                    <p>Посудомоечное</p>
+                </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                        <img src="img/product-menu/icon6.png" alt="Линии раздачи">
-                        <p>Линии раздачи</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/product-menu/icon7.png" alt="Нейтральное">
-                        <p>Нейтральное</p>
-                    </a>
-                </li>
+            <li>
+                <a href="#">
+                    <img src="img/product-menu/icon5.png" alt="Хлебопекарное">
+                    <p>Хлебопекарное</p>
+                </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                        <img src="img/product-menu/icon8.png" alt="Для фаст фуда">
-                        <p>Для фаст фуда</p>
-                    </a>
-                </li>
+            <li>
+                <a href="#">
+                    <img src="img/product-menu/icon6.png" alt="Линии раздачи">
+                    <p>Линии раздачи</p>
+                </a>
+            </li>
+                
+            <li>
+                <a href="#">
+                    <img src="img/product-menu/icon7.png" alt="Нейтральное">
+                    <p>Нейтральное</p>
+                </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                        <img src="img/product-menu/icon9.png" alt="Для залов">
-                        <p>Для залов</p>
-                    </a>
-                </li>
+            <li>
+                <a href="#">
+                    <img src="img/product-menu/icon8.png" alt="Для фаст фуда">
+                    <p>Для фаст фуда</p>
+                </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                        <img src="img/product-menu/icon10.png" alt="Вспомогательное">
-                        <p>Вспомогательное</p>
-                    </a>
-                </li>
+            <li>
+                <a href="#">
+                    <img src="img/product-menu/icon9.png" alt="Для залов">
+                    <p>Для залов</p>
+                </a>
+            </li>
 
-                <li>
-                    <a href="#">
-                        <img src="img/product-menu/icon11.png" alt="Для магазинов">
-                        <p>Для магазинов</p>
-                    </a>
-                </li>
+            <li>
+                <a href="#">
+                    <img src="img/product-menu/icon10.png" alt="Вспомогательное">
+                    <p>Вспомогательное</p>
+                </a>
+            </li>
 
-            </ul>
+            <li>
+                <a href="#">
+                    <img src="img/product-menu/icon11.png" alt="Для магазинов">
+                    <p>Для магазинов</p>
+                </a>
+            </li>
+
+        </ul>
     </nav>
 </header>

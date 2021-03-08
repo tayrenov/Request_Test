@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items:center;
+    height: 65px;
+
     
     .logo {
         display: flex;
@@ -16,7 +18,11 @@
         .logo__text {
             h1 {
                 font-size: 33px;
-                padding-left: 1px;
+                padding-top: 4px;
+                padding-left: 3px;
+                span {
+                    text-transform: uppercase;
+                }
             }
 
             .logo__subtittle {
@@ -29,6 +35,9 @@
         width: 57.3558%;
         height:35px;
         display: flex;
+
+        padding-left: 23px;
+        padding-bottom: 2px;
         .header__main-panel__form__list {
             width:65px;
             height: 100%;
@@ -38,12 +47,14 @@
             background:#f1f1f1;
             border-radius: 5px 0 0 5px;
             margin-right: 1px;
+            padding-left: 3px;
             cursor: pointer;
             span {
                 position: relative;
                 top:1px;
                 transform: rotate(180deg);
                 font-size: 10px;
+                margin-left: 9px;
             }
         }
 
@@ -76,29 +87,32 @@
         align-items:center;
         justify-content: space-between;
 
+
         img {
             width:35px;
             height:35px;
-            margin-right: 3px;
+            padding-left: 21px;
         }
 
         span {
-            width:105px;
+            width:109px;
+            font-weight: 300;
         }
     }
 
     .header__basket {
         display: flex;
         position: relative;
-        .svg_basket {
-            width:29px;
-            height:27px;
-            fill:#000;
+        img {
+            margin-top: 9px;
+            margin-right: 14px;
+
         }
         .basket_number {
+            color:$orange;
             position:absolute;
-            top:0;
-            left:0;
+            top:-5px;
+            left:8px;
         }
     }
 }

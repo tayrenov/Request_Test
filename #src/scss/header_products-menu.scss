@@ -1,11 +1,28 @@
 .header__products-menu__wrapper {   
-    width:100;
+    width:100%;
+    height:100px;
     background-color:#fff;
+
+    .header__products-menu__adaptive-btn {
+        display: none;
+    }
 
 
     .header__products-menu {
         display: flex;
         justify-content: space-between;
+        padding-top: 12px;
+
+        li {
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    padding-top: 3px;
+                }
+            }
+        }
     }
 
 } 

@@ -1,0 +1,42 @@
+.header__wrapper {
+    /* *Header_main_menu */
+    .header__main-menu__wrapper {
+        .header__main-menu__container {
+            .header__main-menu_list {
+                width:85%;
+                .header__main-menu {
+                    .header__main-menu__vertical_line {
+                        display: none;
+                    }
+                }
+            }
+
+            .header__main-menu__contacts {
+                width:9.375%;
+                .contacts__email {
+                    min-width: 50px;
+                    width:50px;
+                    span {
+                        display: none;
+                    }
+                }
+                .contacts__telephone {
+                    min-width: 50px;
+                    width:50px;
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    /* *Header_main-panel */
+
+    .header__main-panel {
+        
+        .header__main-panel__form {
+            width:50%;
+        }
+
+    }
+}

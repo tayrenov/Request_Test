@@ -1,0 +1,75 @@
+.header__wrapper {
+    .header__main-menu__wrapper {
+        height:110px;
+        .header__main-menu__container {
+            .header__main-menu_list {
+                width:80%;
+                .header__main-menu {
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    li {
+                        width:20%;
+                    }
+                    li:first-child {
+                        margin-bottom: 20px;
+                    }
+                }
+            
+            }
+
+            .header__main-menu__contacts {
+                width:19%;
+                flex-direction: column;
+                border-left: 1px solid #fff;
+                padding-left: 10px;
+                .contacts__email {
+                    width:100%;
+                    margin-bottom: 20px;
+                    justify-content: center;
+                    span {
+                        padding-left: 5px;
+                        display: block;
+                    }
+                }
+                .contacts__telephone {
+                    width:100%;
+                    justify-content: center;
+                    span {
+                        padding-left: 5px;
+                        display: block;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    /* *Header_main-panel */
+
+    .header__main-panel {
+        
+        .header__main-panel__form {
+            width:30%;
+        }
+    
+    }
+
+    /* *header__products-menu*/
+
+    .header__products-menu__wrapper {
+
+        .header__products-menu {
+
+            li {
+                a{
+                    p{
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+}

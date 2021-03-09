@@ -1,4 +1,4 @@
-<header class="header__wrapper">
+<header class="header__wrapper ">
     <div class="header__main-menu__wrapper  ">
         <div class="header__main-menu__container _container">
             <div class="header__burger">
@@ -27,12 +27,15 @@
                     <span>info@stolovay.ru</span>
                 </a>
 
-                <a href="tel: 84957907205" class="contacts__telephone">
+                <a class="contacts__telephone">
                     <svg class="svg_telephone">
                         <use xlink:href="img/icons/sprite.svg#telephone"></use>
                     </svg>
                     <span>8 495 790-72-05</span>
+                    
+                    
                 </a>
+                @@include("header__pop-up-telephone.html")
             </div>
         </div>    
     </div>
@@ -77,6 +80,25 @@
         </div>
     </section>
     
+    <section class="header__adative-dtn-block">
+        <div class="header__adaptive-search">
+            <svg class="svg_telephone">
+                <use xlink:href="img/icons/sprite.svg#search"></use>
+            </svg>
+        </div>
+
+        <div class="header__adaptive-telephone">
+            <svg class="svg_telephone">
+                <use xlink:href="img/icons/sprite.svg#telephone"></use>
+            </svg>
+        </div>
+
+        <div class="header__adaptive-bascet">
+            <img src="img/basket_orange.png" alt="basket">
+            <div class="basket_number">12</div>
+        </div>
+    </section>
+
     <nav class="header__products-menu__wrapper">
         
         <div class="header__products-menu__adaptive-btn">

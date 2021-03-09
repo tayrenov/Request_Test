@@ -1,0 +1,166 @@
+.header__pop-up-telephone {
+    width:755px;
+    background:#fff;
+
+    position: absolute;
+    top:39px;
+    right:0;
+    z-index: 50;
+
+    padding:59px 47px 0 71px;
+    box-sizing:border-box;
+    .pop-up-telephone {
+        width:100%;
+        height:305px;
+        display: flex;
+        justify-content: space-between;
+
+        .pop-up-telephone_left-block {
+            display: flex;
+            flex-direction: column;
+            .pop-up-telephone_left-block__telephone{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+
+                a { 
+                    width:auto;
+                    color:green;
+                    font-size: 24px;
+                }
+
+                span {
+                    color:$light-gray;
+                    font-size: 16px;
+                    font-weight: 300;       
+                    margin-bottom: 27px;             
+                }
+
+                .pop-up-telephone_left-block__contacts {
+               
+                    p {
+                        font-size: 16px;
+                        margin-bottom: 21px;   
+                    }
+    
+                    ul {
+    
+                        li {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 11px;
+
+                                a {
+                                    color:$dark-gray;
+                                    padding-left: 5px;
+                                }
+
+                                a:hover {
+                                    border-bottom:1px solid $light-gray;
+                                }
+
+
+                            svg {
+                                width:21px;
+                                height:23px;
+                                box-sizing:border-box;
+                                fill:#000;
+                                margin-right: 5px;
+                            }
+    
+                            img {
+                                width:26px;
+                                height:27px;
+                            }
+    
+                            a {
+                                font-size: 18px;
+                            }
+                        }
+
+                        
+                    }
+                }
+            }
+
+            
+
+        }
+
+        .pop-up-telephone_right-block {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: 24px;
+            }
+
+            span {
+                color:$light-gray;
+                font-size: 16px;
+                font-weight: 300;
+                margin-bottom: 25px;
+
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: 4px;
+
+                }
+
+                input {
+                    border:none;
+                    background:#fff;
+                    font-size: 18px;
+                    border-bottom:1px solid $gray;
+                    margin-bottom: 17px;
+                }
+
+                input:focus {
+                    border-bottom:1px solid $orange;
+                }
+
+            }
+
+            button {
+                margin-top: 5px;
+            }
+
+        }
+    }
+    #close_btn {
+        position: absolute;
+        top:12px;
+        right:12px;
+        width:16px;
+        height:21px;
+        color:$light-gray;
+        font-size: 30px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+}
+
+.pop-up__wrapper {
+position: fixed;
+width:100%;
+height: 100%;
+background:rgba(0,0,0,.5);
+left:0;
+top:0;
+z-index: 40;
+}
+
+.header__pop-up__hide {
+    display: none;
+}
+
+.header__pop-up__active {
+    display: block;
+}

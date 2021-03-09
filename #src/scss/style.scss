@@ -2,7 +2,7 @@
     $white:#fff;
     $light-gray:#171717;
     $gray:#303030;
-    $dark-gray:#777777;
+    $dark-gray:#121212;
     $orange: #ffaf2d;
     $green:#00aa4b;
     $bg_gray:#e8e7e7;
@@ -14,4 +14,37 @@
 
 body {
     background:#f3f2f2;
+    color:$dark-gray;
+}
+
+input, button {
+    outline:none;
+}
+
+._button {
+    width:132px;
+    height:45px;
+    border-radius:20px;
+    background:$orange;
+    border:none;
+    color:#fff;
+    font-size: 18px;
+}
+
+.pop-up__wrapper {
+    position: fixed;
+    width:100%;
+    height: 100%;
+    background:rgba(0,0,0,.5);
+    left:0;
+    top:48px;
+    z-index: 40;
+    }
+
+.active {
+    display: block;
+}
+
+.hide {
+    display:none;
 }

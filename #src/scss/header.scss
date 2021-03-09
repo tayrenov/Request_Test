@@ -8,6 +8,7 @@
         display: flex;
         align-items:center;
         justify-content: space-between;
+        z-index: 50;
         .header__main-menu__container {
             display: flex;
             align-items:center;
@@ -52,6 +53,7 @@
                 width:46%;
                 display: flex;
                 justify-content: space-between;
+                cursor: pointer;
                 .svg_email {
                     width:21px;
                     height:20px;
@@ -62,12 +64,16 @@
                 width:46%;
                 display: flex;
                 justify-content: space-between;
+                cursor: pointer;
                 .svg_telephone {
                     width:31px;
                     height: 17px;
                 }
             }
 
+
+
+            @import "header__pop-up-telephon";
     
            
         }
@@ -79,6 +85,23 @@
     }
 
     @import "header_main-panel.scss";
+
+    .header__adative-dtn-block {
+
+        .header__adaptive-search {
+            display: none;
+        } 
+
+        .header__adaptive-telephone {
+            display: none;
+        } 
+
+        .header__adaptive-bascet {
+            display: none;
+        } 
+
+    }
+
     @import "header_products-menu.scss";
 
 }

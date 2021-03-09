@@ -2,10 +2,28 @@
 
 document.addEventListener('DOMContentLoaded', () => {   
 
+/*Pop-up_email***/
+const header__pop_up_email =  document.querySelector('.header__pop-up-email'),
+      email = document.querySelector('.contacts__email'); 
+
+      function toggle_email_popUp() {
+        if (document.documentElement.clientWidth > 1600) {
+                header__pop_up_email.classList.toggle('header__pop-up__hide');
+                header__pop_up_email.classList.toggle('header__pop-up__active');
+        }
+    }
+
+      email.onmouseover = function() {
+        toggle_email_popUp();
+      };
+
+      email.onmouseout = function() {
+        header__pop_up_email.onmouseout = function() {
+            toggle_email_popUp();
+        };
+      };
+
 /*Pop-up_telephone***/
-
-
-
 
 const header__pop_up_telephone = document.querySelector('.header__pop-up-telephone'),
       telephone = document.querySelector('.contacts__telephone'),

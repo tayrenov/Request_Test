@@ -1,6 +1,6 @@
 .header__wrapper {
     background:$bg_gray;
-    
+    min-width: 500px;
     .header__main-menu__wrapper {
         background: $green;
         width:100%;
@@ -72,8 +72,8 @@
             }
 
 
-
-            @import "header__pop-up-telephon";
+            @import "header__pop-up-email.scss";
+            @import "header__pop-up-telephon.scss";
     
            
         }

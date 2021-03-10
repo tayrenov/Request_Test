@@ -1,0 +1,9 @@
+.main-content {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+@import "main-content__left-block.scss";
+@import "main-content__center-block.scss";
+@import "main-content__right-block.scss";
+}

@@ -36,16 +36,23 @@ function toggle_Tel_popUp() {
         header__pop_up_telephone.classList.toggle('header__pop-up__active');
         pop_up__wrapper.classList.toggle('active');
         pop_up__wrapper.classList.toggle('hide');
-        console.log(document.documentElement.clientWidth);
     }
 }
 
+window.onresize = function() {
+    if (document.documentElement.clientWidth < 1600) {
+        header__pop_up_telephone.classList.add('header__pop-up__hide');
+        header__pop_up_telephone.classList.remove('header__pop-up__active');
+        pop_up__wrapper.classList.remove('active');
+        pop_up__wrapper.classList.add('hide');
+    }   
+};
       telephone.addEventListener('click', function() {
-        toggle_Tel_popUp()
+        toggle_Tel_popUp();
       });
 
       header_close_btn.addEventListener('click', function() {
-        toggle_Tel_popUp()
+        toggle_Tel_popUp();
       });
 
 
@@ -57,3 +64,5 @@ function toggle_Tel_popUp() {
         }
       });      
 });
+
+@@include('center-slider.js')

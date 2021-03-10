@@ -5,6 +5,7 @@
 
     .header__products-menu__adaptive-btn {
         display: none;
+        font-weight: 300;
     }
 
 
@@ -18,9 +19,6 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                p {
-                    padding-top: 3px;
-                }
             }
         }
     }

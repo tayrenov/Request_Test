@@ -61,6 +61,11 @@ $col-1:100%/12;
     }
 }
 
+@media (max-width: 1160px) {
+
+    @import "media_1160.scss";
+}
+
 @media (max-width: 1280px) {
     ._container {
         width:$max-width;  

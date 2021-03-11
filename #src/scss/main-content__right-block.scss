@@ -9,6 +9,9 @@
     justify-content: flex-end;
     align-self: flex-start;
     padding: 217px 0 0 24px;
+    .main-content__right-block__adaptive-img {
+        display: none;
+    }
     div {
         padding-top: 14px;
         span {

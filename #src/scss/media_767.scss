@@ -353,3 +353,34 @@
 
 
 }
+
+
+.brands {
+    ul {
+
+        li {
+            width: 50%;
+            //min-width: 170px;
+            height:168px;
+            border-bottom: 1px solid #f4f2f2;
+            a {
+                height:120px;
+                padding-top: 18px;
+                box-sizing: border-box;
+                font-size: 30px;
+                .brands__mob-img {
+                    display:block;
+                }
+                .brands__desctop-img {
+                    display:none;
+                }
+            }
+        }
+
+        li:last-child {
+            border:none;
+        }
+
+    }
+
+}

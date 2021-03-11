@@ -148,3 +148,25 @@
         }
     }
 }
+
+
+.brands {
+    ul {
+
+        li {
+            width: 33.3333%;
+            //min-width: 170px;
+            height:168px;
+            border-bottom: 1px solid #f4f2f2;
+            a {
+                height:120px;
+            }
+        }
+
+        li:last-child {
+            border:none;
+        }
+
+    }
+
+}

@@ -993,6 +993,72 @@ a {
   margin-bottom: 49px;
 }
 
+.brands {
+  margin-top: 27px;
+  background: #fff;
+  min-height: 101px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brands ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brands ul li {
+  width: 16.645%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brands ul li a {
+  width: 100%;
+  height: 71px;
+  border-right: 1px solid #f4f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brands ul li a .brands__mob-img {
+  display: none;
+}
+
+.brands ul li:last-child {
+  border: none;
+}
+
 /*********Fonts**************/
 
 @font-face {
@@ -1251,6 +1317,20 @@ button {
   .main-content .main-content__right-block span {
     font-size: 14px;
     margin-bottom: 73px;
+  }
+
+  .brands ul li {
+    width: 33.3333%;
+    height: 168px;
+    border-bottom: 1px solid #f4f2f2;
+  }
+
+  .brands ul li a {
+    height: 120px;
+  }
+
+  .brands ul li:last-child {
+    border: none;
   }
 }
 
@@ -1707,5 +1787,31 @@ button {
 
   .main-content .main-content__right-block span {
     font-size: 30px;
+  }
+
+  .brands ul li {
+    width: 50%;
+    height: 168px;
+    border-bottom: 1px solid #f4f2f2;
+  }
+
+  .brands ul li a {
+    height: 120px;
+    padding-top: 18px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 30px;
+  }
+
+  .brands ul li a .brands__mob-img {
+    display: block;
+  }
+
+  .brands ul li a .brands__desctop-img {
+    display: none;
+  }
+
+  .brands ul li:last-child {
+    border: none;
   }
 }

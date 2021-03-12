@@ -1,0 +1,97 @@
+.offers {
+    width:72.9166%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    .offers__left-block {
+        padding-top: 168px;
+        width:59.6428%;
+        min-height: 610px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .offers__left-block__content {
+            h2 {
+                max-width:800px;
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 18px;
+                font-weight: 300;
+                margin-bottom: 32px;
+                max-width:800px;
+            }
+            span {
+                display: block;
+                font-weight: 300;
+                font-size: 40px;
+                margin-bottom: 24px;
+            }
+    
+        } 
+        button {
+            width:50px;
+            height:50px;
+            border:none;
+            border-radius:25px;
+            background: #232323;
+            font-size: 24px;
+            font-weight: 300;
+            color:#fff;
+            cursor: pointer;
+        }
+    }
+
+    .offers__right-block {
+        width: 22.2%;
+        height:400px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 223px;
+
+        .logo {
+            svg {
+                width:151px;
+                height:151px;
+                
+            }
+            
+            .logo__text {
+                padding-top: 24px;
+                h1 {
+                    font-size: 40px;
+                    span {
+                        color:#232323;
+                        
+                        font-size: 40px;
+                        text-transform: uppercase;
+                    }
+                }
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .offers__right-block__group-comp {
+            margin-top: 32px;
+            margin-bottom: 30px;
+            span {
+                font-size: 24px;
+            }
+            p {
+                font-size: 18px;
+                color:#777777;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            color:#232323;
+            margin-bottom: 2px;
+        }
+    }
+
+}

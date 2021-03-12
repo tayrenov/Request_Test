@@ -103,10 +103,12 @@
     .header__basket {
         display: flex;
         position: relative;
-        img {
-            margin-top: 9px;
-            margin-right: 14px;
-
+        svg {
+            display: flex;
+            align-self: flex-end;
+            width:29px;
+            height:27px;
+            fill: #383838;
         }
         .basket_number {
             color:$orange;

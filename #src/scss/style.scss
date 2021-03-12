@@ -13,7 +13,10 @@
 @import "main-content.scss";
 
 @import "brands.scss";
+@import "news.scss";
 
+@import "recommend.scss";
+@import "offers.scss";
 /*********Fonts**************/
 @font-face {
 	font-family: 'MyriadPro';
@@ -36,6 +39,7 @@ body *{
 /******************************/
 
 body {
+    min-width: 696px;
     background:#f4f2f2;
     color:$dark-gray;
 }
@@ -70,4 +74,22 @@ input, button {
 
 .hide {
     display:none;
+}
+
+
+._news__container__info {
+
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        font-size: 16px;
+        color:$green;
+    }
+
+    p {
+        color:$light-gray;
+    }
+    
 }

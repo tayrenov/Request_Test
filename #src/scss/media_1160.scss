@@ -12,3 +12,47 @@
         display: none;
     }
 }
+
+
+
+footer {
+
+    .footer__menu {
+
+        .footer__menu__info-col, .footer__menu__equipment-col, .footer__menu__offer-col {
+            margin-right:20px;
+
+            h2 {
+                font-size: 16px;
+            }
+            
+            ul {
+                li {
+                    a {
+                        font-size: 14px;
+                    }
+                    
+                }
+            }
+        }
+
+        .footer__menu__offer-col {
+            max-width:170px;
+        }
+
+        .footer__menu__contants-col {
+            max-width:170px;
+            h2 {
+                
+                font-size: 16px;
+            }   
+            .footer__menu__contants-col__tel {
+
+                a, span, p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}

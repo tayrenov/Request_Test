@@ -1639,7 +1639,7 @@ footer .footer__bottom-wrapper .footer__bottom .footer__botom__info {
 /*********Fonts**************/
 
 body * {
-  font-family: 'MyriadPro';
+  font-family: 'MyriadPro', 'PT Sans';
 }
 
 /******************************/

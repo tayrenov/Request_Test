@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'Myriad Pro';
-  src: url("fonts/MyriadPro-Light.eot");
-  src: url("fonts/MyriadPro-Light.eot?#iefix") format("embedded-opentype"), url("fonts/MyriadPro-Light.woff") format("woff"), url("fonts/MyriadPro-Light.ttf") format("truetype");
+  src: url("../Request_Test/dist/fonts/MyriadPro-LightSemiExt.eot");
+  src: url("../Request_Test/dist/fonts/MyriadPro-LightSemiExt.eot?#iefix") format("embedded-opentype"), url("../Request_Test/dist/fonts/MyriadPro-LightSemiExt.woff") format("woff"), url("../Request_Test/dist/fonts/MyriadPro-LightSemiExt.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'MyriadPro';
-  src: url("fonts/MyriadPro-Regular.eot");
-  src: url("fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/MyriadPro-Regular.woff") format("woff"), url("fonts/MyriadPro-Regular.ttf") format("truetype");
+  src: url("../Request_Test/dist/fonts/MyriadPro-Regular.eot");
+  src: url("../Request_Test/dist/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../Request_Test/dist/fonts/MyriadPro-Regular.woff") format("woff"), url("../Request_Test/dist/fonts/MyriadPro-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -1719,7 +1719,7 @@ button {
   }
 
   .header__wrapper .header__main-menu__wrapper .header__main-menu__container .header__main-menu_list {
-    width: 85%;
+    width: 75%;
   }
 
   .header__wrapper .header__main-menu__wrapper .header__main-menu__container .header__main-menu_list .header__main-menu .header__main-menu__vertical_line {
@@ -1727,25 +1727,7 @@ button {
   }
 
   .header__wrapper .header__main-menu__wrapper .header__main-menu__container .header__main-menu__contacts {
-    width: 9.375%;
-  }
-
-  .header__wrapper .header__main-menu__wrapper .header__main-menu__container .header__main-menu__contacts .contacts__email {
-    min-width: 50px;
-    width: 50px;
-  }
-
-  .header__wrapper .header__main-menu__wrapper .header__main-menu__container .header__main-menu__contacts .contacts__email span {
-    display: none;
-  }
-
-  .header__wrapper .header__main-menu__wrapper .header__main-menu__container .header__main-menu__contacts .contacts__telephone {
-    min-width: 50px;
-    width: 50px;
-  }
-
-  .header__wrapper .header__main-menu__wrapper .header__main-menu__container .header__main-menu__contacts .contacts__telephone span {
-    display: none;
+    width: 25%;
   }
 
   .header__wrapper .header__main-panel .header__main-panel__form {

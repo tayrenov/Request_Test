@@ -1,3 +1,19 @@
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('Request_Test/dist//fonts/MyriadPro-LightSemiExt.eot');
+	src: local('☺'), url('Request_Test/dist//fonts/MyriadPro-LightSemiExt.woff') format('woff'), url('Request_Test/dist//fonts/MyriadPro-LightSemiExt.ttf') format('truetype'), url('Request_Test/dist//fonts/MyriadPro-LightSemiExt.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('Request_Test/dist//fonts/MyriadPro-Regular.eot');
+	src: local('☺'), url('Request_Test/dist//fonts/MyriadPro-Regular.woff') format('woff'), url('Request_Test/dist//fonts/MyriadPro-Regular.ttf') format('truetype'), url('Request_Test/dist//fonts/MyriadPro-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
 /****Colors****/
     $white:#fff;
     $light-gray:#171717;
@@ -6,7 +22,7 @@
     $orange: #ffaf2d;
     $green:#00aa4b;
     $bg_gray:#e8e7e7;
-/****Fonts*****/
+
 @import "reset.scss";
 @import "grid.scss";
 @import "header.scss";
@@ -19,20 +35,7 @@
 @import "offers.scss";
 @import "footer.scss";
 /*********Fonts**************/
-@font-face {
-	font-family: 'MyriadPro';
-	src: url('/fonts/MyriadPro-LightSemiExt.eot');
-	src: local('☺'), url('/fonts/MyriadPro-LightSemiExt.woff') format('woff'), url('/fonts/MyriadPro-LightSemiExt.ttf') format('truetype'), url('/fonts/MyriadPro-LightSemiExt.svg') format('svg');
-	font-weight: 300;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'MyriadPro';
-	src: url('/fonts/MyriadPro-Regular.eot');
-	src: local('☺'), url('/fonts/MyriadPro-Regular.woff') format('woff'), url('/fonts/MyriadPro-Regular.ttf') format('truetype'), url('/fonts/MyriadPro-Regular.svg') format('svg');
-	font-weight: 400;
-	font-style: normal;
-}
+
 
 body *{
 	font-family: 'MyriadPro';

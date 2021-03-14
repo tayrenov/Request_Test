@@ -13,6 +13,12 @@
 
             .header__main-menu__contacts {
                 width:25%;
+                .contacts__email {
+                    justify-content: center;
+                }
+                .contacts__telephone {
+                    justify-content: center;
+                }
             }
         }
     }

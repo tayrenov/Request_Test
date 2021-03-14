@@ -1731,6 +1731,18 @@ button {
     width: 25%;
   }
 
+  .header__wrapper .header__main-menu__wrapper .header__main-menu__container .header__main-menu__contacts .contacts__email {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .header__wrapper .header__main-menu__wrapper .header__main-menu__container .header__main-menu__contacts .contacts__telephone {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .header__wrapper .header__main-panel .header__main-panel__form {
     width: 50%;
   }

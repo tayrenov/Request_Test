@@ -31,7 +31,7 @@ const header__pop_up_telephone = document.querySelector('.header__pop-up-telepho
       pop_up__wrapper = document.querySelector('.pop-up__wrapper');
 
 function toggle_Tel_popUp() {
-    if (document.documentElement.clientWidth > 1600) {
+    if (document.documentElement.clientWidth > 1280) {
         header__pop_up_telephone.classList.toggle('header__pop-up__hide');
         header__pop_up_telephone.classList.toggle('header__pop-up__active');
         pop_up__wrapper.classList.toggle('active');
@@ -40,7 +40,7 @@ function toggle_Tel_popUp() {
 }
 
 window.onresize = function() {
-    if (document.documentElement.clientWidth < 1600) {
+    if (document.documentElement.clientWidth < 1280) {
         header__pop_up_telephone.classList.add('header__pop-up__hide');
         header__pop_up_telephone.classList.remove('header__pop-up__active');
         pop_up__wrapper.classList.remove('active');

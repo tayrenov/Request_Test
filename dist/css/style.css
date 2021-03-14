@@ -182,7 +182,7 @@ a {
 .header__wrapper .header__main-menu__wrapper {
   background: #00aa4b;
   width: 100%;
-  height: 48px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -561,7 +561,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 23px;
+  padding-left: 50px;
   padding-bottom: 2px;
 }
 
@@ -659,6 +659,7 @@ a {
   width: 29px;
   height: 27px;
   fill: #383838;
+  padding-right: 13px;
 }
 
 .header__wrapper .header__main-panel .header__basket .basket_number {
@@ -1639,7 +1640,7 @@ footer .footer__bottom-wrapper .footer__bottom .footer__botom__info {
 /*********Fonts**************/
 
 body * {
-  font-family: 'MyriadPro', 'PT Sans';
+  font-family: 'MyriadPro';
 }
 
 /******************************/
@@ -2268,7 +2269,7 @@ button {
     padding-left: 5px;
   }
 
-  .header__wrapper .header__main-panel .logo img {
+  .header__wrapper .header__main-panel .logo .svg_logo {
     width: 55px;
     height: 55px;
   }

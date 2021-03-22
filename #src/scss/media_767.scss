@@ -623,12 +623,13 @@ footer {
         .footer__menu__equipment-col, 
         .footer__menu__offer-col
         {   
+            height:65px;
             padding: 0;
             margin-left: 17px;
             max-width: none;
             display: flex;
             justify-content: space-between;
-            margin-top: 30px;
+            align-items: center;
             border-bottom:1px solid #fff;
             span {
                 font-size: 30px;
@@ -638,6 +639,7 @@ footer {
             }
             h2 {
                 font-size: 30px;
+                margin:0;
             }
 
             ul {
@@ -645,10 +647,11 @@ footer {
             }
         }
         .footer__menu__contants-col {
+            height:65px;
+            align-items: center;
             max-width:none;
             display: flex;
             justify-content: space-between;
-            margin-top: 30px;
             margin-left: 17px;
             margin-right: 20px;
             border-bottom:1px solid #fff;
@@ -658,6 +661,7 @@ footer {
             }
             h2 {
                 font-size: 30px;
+                margin:0;
             }
 
             a, span, p {
@@ -696,4 +700,67 @@ footer {
             }
         }
     }
+    .footer__menu {
+        .footer-active {
+            display: flex;
+            flex-direction: column;
+            height:auto;
+            
+            h2 {
+                height:65px;
+                width:100%;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                border-bottom:1px solid #fff;
+            }
+
+            ul {
+                width:100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    a {
+                        font-size: 24px;
+                    }
+                }
+            }
+            span {
+                display: none;
+            }
+
+            .footer__menu__contants-col__tel,.footer__menu__contants-col__schedule,.footer__menu__contants-col__mail {
+                *, a {
+                    font-size: 24px;
+                    text-align: center;
+                }
+
+                a {
+                    display: block;
+                }
+                span {
+                    display: block;
+                }
+                p {
+                    display: block;
+                }
+            }
+
+            .footer_adaptive {
+                display: none;
+            }
+
+        }
+
+
+    }
+
 }

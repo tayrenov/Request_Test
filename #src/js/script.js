@@ -66,3 +66,5 @@ window.onresize = function() {
 });
 
 @@include('center-slider.js')
+
+@@include('footer-list.js')
